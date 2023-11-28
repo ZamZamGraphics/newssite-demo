@@ -1,0 +1,359 @@
+/*
+Theme Name: ZamZam News Theme
+Theme URI: https://zamzamgraphics.com/
+Author: ZamZam Graphics
+Author URI: https://zamzamgraphics.com/
+Description: This is a News Theme.
+Version: 3.0
+Tags: News Portal, Bangla News, Bangla News Portal
+Text Domain: zamzam
+*/
+
+@font-face {
+  font-family: SolaimanLipi;
+  src: url("../fonts/solaimanLipi.eot"); /* IE9*/
+  src: url("../fonts/solaimanLipi.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/solaimanLipi.woff2") format("woff2"),
+    /* chrome、firefox */ url("../fonts/solaimanLipi.woff") format("woff"),
+    /* chrome、firefox */ url("../fonts/solaimanLipi.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../fonts/solaimanLipi.svg#SolaimanLipi") format("svg"); /* iOS 4.1- */
+}
+
+$brandColor: #01284f;
+$redColor: #b30f0f;
+$darkColor: #222222;
+$footerColor: #01162b;
+$copyrightColor: #011931;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: SolaimanLipi;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+body {
+  color: #444444;
+  background: #ffffff;
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $brandColor;
+  font-weight: bold;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+a {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+// header style
+header {
+  position: relative;
+  background: #fbfbfb;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  .header-social {
+    text-align: right;
+    ul li {
+      display: inline-block;
+    }
+    ul li::after {
+      content: "I";
+      padding-left: 13px;
+      padding-right: 13px;
+      color: #d5d5d5;
+    }
+    ul li:last-child:after {
+      content: "I";
+      color: transparent;
+    }
+    ul li .la-facebook,
+    ul li .la-facebook-f {
+      color: #3b5998;
+    }
+
+    ul li .la-twitter {
+      color: #00acee;
+    }
+
+    ul li .la-youtube {
+      color: #c4302b;
+    }
+
+    ul li .la-linkedin,
+    ul li .la-linkedin-in {
+      color: #0e76a8;
+    }
+
+    ul li .la-instagram {
+      color: #8a3ab9;
+    }
+  }
+}
+.header-logo {
+  background: #ffffff;
+}
+// navbar style
+.navbar {
+  padding: 0;
+  color: #ffffff;
+  background-color: $brandColor;
+  .navbar-toggler {
+    padding: 0.8rem;
+    color: #ffffff;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-nav {
+    .nav-link {
+      color: #ffffff;
+      padding: 10px 15px;
+    }
+    .nav-link:hover {
+      background-color: $copyrightColor;
+    }
+    .dropdown:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+    .dropdown-menu {
+      color: #ffffff;
+      background-color: $brandColor;
+      margin: 0;
+      padding: 0;
+      border-radius: unset;
+      border: none;
+      width: 200px;
+      .dropdown-item {
+        color: #ffffff;
+      }
+      .dropdown-item:hover {
+        background-color: $copyrightColor;
+      }
+    }
+  }
+}
+// braking style
+.braking-heading {
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: $brandColor;
+  text-align: center;
+}
+.braking-title {
+  padding: 0.5rem;
+  background-color: #0335670f;
+}
+
+// lead-news
+.lead-news {
+  padding: 0.8rem 0;
+  position: relative;
+}
+.news-title {
+  padding: 0.5rem;
+}
+.sub-news {
+  position: relative;
+  padding: 0.8rem 0;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+  .image {
+    position: relative;
+    overflow: hidden;
+    img {
+      display: block;
+      max-width: 110px;
+    }
+  }
+}
+.sub-news:last-of-type {
+  border-bottom: none;
+}
+
+.link-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.ad {
+  padding: 0.8rem 0;
+}
+.news {
+  position: relative;
+  .news-title {
+    padding: 0.5rem 0;
+  }
+  ul li {
+    padding: 0.5rem 0;
+    border-top: 1px solid #ccc;
+  }
+  p {
+    text-align: justify;
+  }
+}
+.cat-title {
+  padding: 10px;
+  font-size: 25px;
+  line-height: 25px;
+  background-color: #0335670f;
+  border-left: 5px solid $brandColor;
+}
+.cat-news {
+  padding-bottom: 0.8rem;
+  .news-title {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.video {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  color: #ffffff;
+  background-color: $darkColor;
+  .video-title {
+    color: #ffffff;
+    font-size: 25px;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .video-title i {
+    color: #ffb300;
+  }
+  .video-thumb {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .video-thumb i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 47px;
+    height: 47px;
+    color: #fff;
+    background: $redColor;
+    text-align: center;
+    line-height: 47px;
+    font-size: 30px;
+    //padding-left: 3px;
+    -webkit-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .thumb-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    color: orange;
+    background-color: #000000e0;
+    margin: 0;
+  }
+}
+
+footer {
+  padding: 3rem 0;
+  color: #dddddd;
+  background-color: $footerColor;
+  .footer-title {
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 0.3rem;
+    position: relative;
+    border-bottom: 1px solid #001c37;
+    margin-bottom: 1rem;
+  }
+  .footer-title::before {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: #012e5b;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.copyright {
+  padding: 1rem;
+  color: #dddddd;
+  background-color: $copyrightColor;
+
+  a,
+  a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+}
