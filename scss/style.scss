@@ -174,14 +174,14 @@ header {
     }
   }
 }
-// braking style
-.braking-heading {
+// breaking style
+.breaking-heading {
   padding: 0.5rem;
   color: #ffffff;
   background-color: $brandColor;
   text-align: center;
 }
-.braking-title {
+.breaking-title {
   padding: 0.5rem;
   background-color: #0335670f;
 }
@@ -259,7 +259,31 @@ header {
     text-align: justify;
   }
 }
-
+.single-cat-info {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #0335670f;
+  ul li {
+    display: inline-block;
+  }
+}
+.single-news {
+  h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .sub-heading {
+    margin-top: 0.8rem;
+    color: $redColor;
+  }
+  img {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    text-align: justify;
+  }
+}
 .video {
   padding: 2rem 0;
   margin: 2rem 0;

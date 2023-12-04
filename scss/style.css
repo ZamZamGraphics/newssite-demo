@@ -158,14 +158,14 @@ header .header-social ul li .la-instagram {
   background-color: #011931;
 }
 
-.braking-heading {
+.breaking-heading {
   padding: 0.5rem;
   color: #ffffff;
   background-color: #01284f;
   text-align: center;
 }
 
-.braking-title {
+.breaking-title {
   padding: 0.5rem;
   background-color: rgba(3, 53, 103, 0.0588235294);
 }
@@ -247,6 +247,31 @@ header .header-social ul li .la-instagram {
   padding-bottom: 0.5rem;
 }
 .cat-news p {
+  text-align: justify;
+}
+
+.single-cat-info {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(3, 53, 103, 0.0588235294);
+}
+.single-cat-info ul li {
+  display: inline-block;
+}
+
+.single-news h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.single-news .sub-heading {
+  margin-top: 0.8rem;
+  color: #b30f0f;
+}
+.single-news img {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.single-news p {
   text-align: justify;
 }
 
