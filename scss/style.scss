@@ -236,7 +236,10 @@ header {
     text-align: justify;
   }
 }
-.cat-title {
+
+.cat-title,
+.wp-block-heading,
+.widget-title {
   padding: 10px;
   font-size: 25px;
   line-height: 25px;
@@ -276,14 +279,78 @@ header {
     margin-top: 0.8rem;
     color: $redColor;
   }
+  .author {
+    font-size: 20px;
+  }
+  .date-time {
+    ul {
+      padding-top: 0.3rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e2e2e2;
+    }
+    ul li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
   img {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .wp-caption-text {
+    padding: 0.5rem;
+    font-size: 16px;
+    font-style: italic;
+    color: #595959;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #e2e2e2;
   }
   p {
+    font-size: 20px;
+    line-height: 30px;
     text-align: justify;
   }
 }
+.nav-pills .nav-link {
+  color: $brandColor;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $brandColor;
+}
+.tab-content {
+  .content-scroll {
+    position: relative;
+    overflow: scroll;
+    width: auto;
+    height: 410px;
+    overflow-x: hidden;
+    margin: 0.3rem 0;
+  }
+  .sub-news {
+    padding: 0.5rem 0;
+  }
+}
+
+.widget,
+.widget_block {
+  margin-bottom: 1rem;
+  ul li {
+    border-bottom: 1px solid #e2e2e2;
+  }
+  ul li a {
+    padding: 0.5rem 0;
+    display: block;
+  }
+  ul li:last-of-type {
+    border-bottom: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .video {
   padding: 2rem 0;
   margin: 2rem 0;
